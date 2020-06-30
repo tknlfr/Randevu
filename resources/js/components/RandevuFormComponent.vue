@@ -161,13 +161,10 @@
             },
             selectDate:function(){
 
-                 axios.get('http://127.0.0.1:8000/api/working-hours/?${this.date}'+this.date)
-               // axios.get('http://127.0.0.1:8000/api/admin/all/?page='+ page)
+                 axios.get('http://127.0.0.1:8000/api/working-hours/?${this.date}')
+              
 
             .then((res)=>{
-                console.log(res);
-                console.log(res.data);
-                 console.log($(this.date));
                 this.workingHours=res.data;
             });
 

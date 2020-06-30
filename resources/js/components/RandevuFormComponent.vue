@@ -161,7 +161,7 @@
             },
             selectDate:function(){
 
-                 axios.get('http://127.0.0.1:8000/api/working-hours/?${this.date}')
+                 axios.get('http://127.0.0.1:8000/api/working-hours/${this.date}')
               
 
             .then((res)=>{
